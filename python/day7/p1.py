@@ -36,11 +36,15 @@ def weight(dic):
 		print(value)
 		if isinstance(value, int):
 			print("wazzza")
-			weight += dic[a]
+			currentWeights += dic[key]
 		else:
 			print("oppsie")
-			print(value)
+			weights[key] = 0
 			weight(value)
+			print(value)
+	print("AND the result is ")
+	print(weights)
+
 
 
 
